@@ -1,0 +1,6 @@
+ {animeInfo && <AnimeInfo animeInfo={animeInfo} />}
+
+ 
+              
+
+             public/assets/anime.gif

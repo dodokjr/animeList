@@ -13,7 +13,7 @@ import { RemoveFromList } from "./RemoveFromList";
 import { TextField, Grid } from '@mui/material';
 
 
-export default Home =>
+export default Anime =>
 {
     const [search, setSearch] = useState('Naruto')
     const [animeData, setAnimeData] = useState();

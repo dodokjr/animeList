@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Login from './components/Login';
 import Singup from './components/Singup';
-import Home from './components/Home';
+import Anime from './components/Anime';
 import
 {
   BrowserRouter as Router,
@@ -10,7 +10,11 @@ import
   Routes,
 } from "react-router-dom";
 
+import Home from './components/home/Home';
+import Footer from './components/Footer';
+
 import './assets/css/main.css.map'
+import './assets/css/app.css'
 
 function App()
 {
@@ -20,12 +24,13 @@ function App()
       <Header />
       <Router>
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/singup' element={<Singup />} />
-          <Route path='/' element={<Home />}>
-          </Route>
+          <Route path='/anime' element={<Anime />} />
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 }
